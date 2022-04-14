@@ -1,0 +1,31 @@
+#include "players.h"
+
+void init_players(){
+	player_1_pcb = (struct tcp_pcb *)NULL;
+	player_2_pcb = (struct tcp_pcb *)NULL;
+
+	player_1_ip.addr = 0;
+	player_2_ip.addr = 0;
+
+	player_1_dir = malloc(2 * sizeof(char));
+	player_1_fvld = malloc(2 * sizeof(char));
+
+	player_2_dir = malloc(2 * sizeof(char));
+	player_2_fvld = malloc(2 * sizeof(char));
+
+	player_1_dir[0] = '0';
+	player_1_dir[1] = '\0';
+
+	player_1_fvld[0] = '0';
+	player_1_fvld[1] = '\0';
+
+	player_2_dir[0] = '0';
+	player_2_dir[1] = '\0';
+
+	player_2_fvld[0] = '0';
+	player_2_fvld[1] = '\0';
+}
+
+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# 
+# Start of session at: Mon Mar 28 22:14:45 2022
+# Process ID: 8336
+# Current directory: C:/Users/zhan4820/game_server_mar_27/lab_demo_2/lab_demo_2.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/zhan4820/game_server_mar_27/lab_demo_2/lab_demo_2.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/zhan4820/game_server_mar_27/lab_demo_2/lab_demo_2.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

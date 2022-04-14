@@ -1,0 +1,16 @@
+#include "players.h"
+
+void init_players(){
+	player_1_pcb = (struct tcp_pcb *)NULL;
+	player_2_pcb = (struct tcp_pcb *)NULL;
+
+	player_1_ip = ()0;
+	player_2_ip = 0;
+
+	player_1_buf = (char *)NULL;
+	player_2_buf = (char *)NULL;
+}
+
+
+
+

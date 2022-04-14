@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Mar 27 15:10:47 2022
+# Process ID: 5760
+# Current directory: C:/Users/zhan4820/game_server_mar_22/lab_demo_2/lab_demo_2.runs/tcp_server_mig_7series_0_0_synth_1
+# Command line: vivado.exe -log tcp_server_mig_7series_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tcp_server_mig_7series_0_0.tcl
+# Log file: C:/Users/zhan4820/game_server_mar_22/lab_demo_2/lab_demo_2.runs/tcp_server_mig_7series_0_0_synth_1/tcp_server_mig_7series_0_0.vds
+# Journal file: C:/Users/zhan4820/game_server_mar_22/lab_demo_2/lab_demo_2.runs/tcp_server_mig_7series_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source tcp_server_mig_7series_0_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP tcp_server_mig_7series_0_0, cache-ID = 4ba0f17064a1e1cc.
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 27 15:10:58 2022...

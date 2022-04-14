@@ -1,0 +1,1389 @@
+/*
+
+Xilinx Vivado v2018.3.1 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2489853 on Tue Mar 26 04:20:25 MDT 2019
+IP Build: 2486929 on Tue Mar 26 06:44:21 MDT 2019
+
+Process ID (PID): 6284
+License: Customer
+
+Current time: 	Tue Mar 15 13:39:21 EDT 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1512x944
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 246 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/DESL/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/DESL/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	chanmi53
+User home directory: C:/Users/chanmi53
+User working directory: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/DESL/Xilinx/Vivado
+HDI_APPROOT: C:/DESL/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/DESL/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/DESL/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/chanmi53/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/chanmi53/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/chanmi53/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/DESL/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/vivado.log
+Vivado journal file location: 	C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/vivado.jou
+Engine tmp dir: 	C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/.Xil/Vivado-6284-BA3145WS05
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/DESL/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 40012@mlm.ece.utoronto.ca;27012@mlm.ece.utoronto.ca
+XILINX_DSP: C:/DESL/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/DESL/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/DESL/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/DESL/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/DESL/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 629 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 64 MB (+64548kb) [00:00:04]
+// [Engine Memory]: 566 MB (+442354kb) [00:00:04]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\chanmi53\snake_game_axi4_full_folder\snake_game_axi4_full\snake_game_axi4_full.xpr. Version: Vivado v2018.3.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 40 MB. Current time: 3/15/22, 1:39:23 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 94 MB (+27800kb) [00:00:10]
+// [Engine Memory]: 707 MB (+117340kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2690 ms.
+// Tcl Message: open_project C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/budiwarm/snake_game_axi4_full_folder/snake_game_axi4_full' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/fast_snake_game_axilite'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/slow_snake_game_axilite'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_ip_timer'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_timerfood'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'. 
+// [GUI Memory]: 107 MB (+9036kb) [00:00:14]
+// [Engine Memory]: 786 MB (+46065kb) [00:00:14]
+// Project name: snake_game_axi4_full; location: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 825.723 ; gain = 208.465 
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv)]", 1, true); // B (D, cp) - Node
+selectCodeEditor("snake_game_axi4_full.sv", 353, 147); // cl (w, cp)
+// Elapsed time: 151 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// aF (cp): Create Block Design: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aF)
+dismissDialog("Create Block Design"); // aF (cp)
+// [Engine Memory]: 840 MB (+16042kb) [00:02:55]
+// Elapsed time: 155 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 138, 96); // cl (w, cp)
+// [GUI Memory]: 113 MB (+1160kb) [00:06:23]
+// Elapsed time: 150 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 278, 166); // cl (w, cp)
+// Elapsed time: 188 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 225, 149); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 225, 149, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 50 MB. Current time: 3/15/22, 2:09:23 PM EDT
+// Elapsed time: 1315 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 155, 152); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 159, 226); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 266, 135); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 67 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Mar 15 14:13:55 2022] Launched synth_1... Run output will be captured here: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 92 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bx (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bx (Q)
+// Elapsed time: 22 seconds
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // q (ak, Q)
+// Elapsed time: 238 seconds
+setFolderChooser("C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test");
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // JButton (C, J)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 270 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ipx::package_project -root_dir C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test -vendor utoronto.ca -library user -taxonomy /UserIP -import_files -set_current false 
+// Tcl Message: INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SIZE_BIT_WIDTH' by 6 for port or parameter 'size' 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// bx (cp):  IP Packager : addNotify
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1615 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 61 MB. Current time: 3/15/22, 2:20:08 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 891.246 ; gain = 17.641 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/fast_snake_game_axilite'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/slow_snake_game_axilite'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_ip_timer'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_timerfood'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1013 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// [Engine Memory]: 883 MB (+461kb) [00:40:56]
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 913.086 ; gain = 39.480 
+// Tcl Message: current_project snake_game_axi4_full 
+// TclEventType: FILE_SET_CHANGE
+// aA (cp): Package IP: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("IP Packager"); // bx (cp)
+// [GUI Memory]: 119 MB (+348kb) [00:41:00]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// bx (cp):  Package IP : addNotify
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: current_project tmp_edit_project 
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 65 MB. Current time: 3/15/22, 2:20:36 PM EDT
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // aA (cp)
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/fast_snake_game_axilite'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/slow_snake_game_axilite'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_ip_timer'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_timerfood'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// Elapsed time: 910 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), snake_top : snake_game_top_0 (snake_game_top_0.xci)]", 2); // B (D, cp)
+// A (cp): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), snake_top : snake_game_top_0 (snake_game_top_0.xci), snake_game_top_0 (snake_game_top_0.sv)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), snake_top : snake_game_top_0 (snake_game_top_0.xci), collision (collision.sv)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), snake_top : snake_game_top_0 (snake_game_top_0.xci), collision (collision.sv)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 876 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game_axi4_full.sv", 1); // k (j, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 159, 146); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 159, 146, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 61 MB. Current time: 3/15/22, 2:50:39 PM EDT
+selectCodeEditor("snake_game_axi4_full.sv", 148, 51); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal_pulse", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal_pulse"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal_pulse"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal_pulse"); // l (aT, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 129, 147); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 129, 147, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 19 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "aresetn"); // l (aT, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 144, 75); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 144, 75, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 196 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 577, 113); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 216, 88); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 266, 149); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "go_signal"); // l (aT, cp)
+// Elapsed time: 124 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 438, 63); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 171, 166); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 66, 26); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 269, 331); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 335, 327); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 265, 332); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 167, 67); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bx (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bx (Q)
+// Elapsed time: 85 seconds
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // q (ak, Q)
+setFolderChooser("C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal");
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // JButton (C, J)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 99 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  IP Packager : addNotify
+// Tcl Message: ipx::package_project -root_dir C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal -vendor utoronto.ca -library user -taxonomy /UserIP -import_files -set_current false 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SIZE_BIT_WIDTH' by 6 for port or parameter 'size' 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1742 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 925.801 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/fast_snake_game_axilite'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/slow_snake_game_axilite'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_ip_timer'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_timerfood'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 925.801 ; gain = 0.000 
+// Tcl Message: current_project snake_game_axi4_full 
+// aA (cp): Package IP: addNotify
+// [GUI Memory]: 134 MB (+8747kb) [01:21:23]
+dismissDialog("IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 148 MB (+7407kb) [01:21:24]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 16 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: current_project tmp_edit_project 
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 71 MB. Current time: 3/15/22, 3:01:01 PM EDT
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // aA (cp)
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Mar 15 15:01:34 2022] Launched synth_1... Run output will be captured here: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bx (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bx (Q)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // q (ak, Q)
+setFolderChooser("C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal");
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // JButton (C, J)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 15 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ipx::package_project -root_dir C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal -vendor utoronto.ca -library user -taxonomy /UserIP -import_files -set_current false 
+// bx (cp):  IP Packager : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SIZE_BIT_WIDTH' by 6 for port or parameter 'size' 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1625 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 925.801 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 925.801 ; gain = 0.000 
+// aA (cp): Package IP: addNotify
+dismissDialog("IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// TclEventType: FILE_SET_CHANGE
+// CommandFailedException: ERROR: [Common 17-167] Type error 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// Tcl Message: current_project snake_game_axi4_full 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Package IP"); // bx (cp)
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: current_project tmp_edit_project 
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 81 MB. Current time: 3/15/22, 3:03:20 PM EDT
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // aA (cp)
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: CREATE_IP_CATALOG
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 78 MB. Current time: 3/15/22, 3:33:24 PM EDT
+// Elapsed time: 2864 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "txn", true); // l (aT, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 383, 285); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 402, 288); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 430, 191); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 430, 191, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("snake_game_axi4_full.sv", 447, 142); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 435, 140); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 437, 138); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 578, 317); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 564, 285); // cl (w, cp)
+typeControlKey((HResource) null, "snake_game_axi4_full.sv", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "snake_game_axi4_full.sv", 'c'); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 184, 199); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 596, 195); // cl (w, cp)
+typeControlKey((HResource) null, "snake_game_axi4_full.sv", 'v'); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 394, 272); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 397, 265); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 383, 315); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 401, 317); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 472, 270); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 443, 250); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 443, 250, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("snake_game_axi4_full.sv", 275, 256); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 205, 198); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 205, 198, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("snake_game_axi4_full.sv", 454, 198); // cl (w, cp)
+// Elapsed time: 115 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar 15 15:55:44 2022] Launched synth_1... Run output will be captured here: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectCodeEditor("snake_game_axi4_full.sv", 729, 99); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 41 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectCodeEditor("snake_game_axi4_full.sv", 348, 234); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 358, 149); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 346, 261); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 317, 235); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 368, 264); // cl (w, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bx (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bx (Q)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // q (ak, Q)
+setFolderChooser("C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal");
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // JButton (C, J)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 54 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ipx::package_project -root_dir C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal -vendor utoronto.ca -library user -taxonomy /UserIP -import_files -set_current false 
+// bx (cp):  IP Packager : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SIZE_BIT_WIDTH' by 6 for port or parameter 'size' 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1526 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 961.332 ; gain = 1.965 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 961.332 ; gain = 1.965 
+// aA (cp): Package IP: addNotify
+dismissDialog("IP Packager"); // bx (cp)
+// PAPropertyPanels.initPanels (snake_game_axi4_full.sv) elapsed time: 0.2s
+// Tcl Message: current_project snake_game_axi4_full 
+// TclEventType: FILE_SET_CHANGE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, I)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: current_project tmp_edit_project 
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 88 MB. Current time: 3/15/22, 3:58:11 PM EDT
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // aA (cp)
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal' 
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 84 MB. Current time: 3/15/22, 4:28:15 PM EDT
+// Elapsed time: 2978 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (cQ, cp)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// bx (cp):  Refresh IP Catalog : addNotify
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+// a (cp): Critical Messages: addNotify
+dismissDialog("Refresh IP Catalog"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// 'q' command handler elapsed time: 4 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cp)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cp)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ab (cp): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+// TclEventType: RUN_MODIFY
+dismissDialog("Enable Core Container"); // ab (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// bx (cp):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset snake_game_top_0 -vlnv utoronto.ca:user:snake_game_top:1.0 [get_ips  snake_game_top_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'snake_game_top_0' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_top_0/snake_game_top_0.xci' from fileset 'snake_game_top_0' to fileset 'sources_1'. INFO: [IP_Flow 19-3422] Upgraded snake_game_top_0 (snake_game_top_v1_0 1.0) from revision 4 to revision 5 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'snake_game_top_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips snake_game_top_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cQ, cp)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // u (Q, cp)
+// bx (cp):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// HOptionPane Error: 'Missing XML file. Cannot proceed with Package IP. (Package IP)'
+selectButton("PAResourceItoN.IPPackagerHandler_MISSING_XML_FILE_CANNOT_PROCEED_WITH_OK", "OK"); // JButton (C, I)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bx (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bx (Q)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // q (ak, Q)
+// Elapsed time: 10 seconds
+setFolderChooser("C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal");
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // JButton (C, J)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 17 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ipx::package_project -root_dir C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal -vendor utoronto.ca -library user -taxonomy /UserIP -import_files -set_current false 
+// Tcl Message: INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SIZE_BIT_WIDTH' by 6 for port or parameter 'size' 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// bx (cp):  IP Packager : addNotify
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1642 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 965.520 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 158 MB (+3485kb) [03:09:36]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 965.520 ; gain = 0.000 
+// aA (cp): Package IP: addNotify
+dismissDialog("IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 96 MB. Current time: 3/15/22, 4:48:58 PM EDT
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // aA (cp)
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal' 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 697, 132); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'snake_game_top_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar 15 16:49:24 2022] Launched snake_game_top_0_synth_1... Run output will be captured here: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/snake_game_top_0_synth_1/runme.log [Tue Mar 15 16:49:25 2022] Launched synth_1... Run output will be captured here: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 128 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bx (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bx (Q)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // q (ak, Q)
+setFolderChooser("C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal");
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // JButton (C, J)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 19 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  IP Packager : addNotify
+// Tcl Message: ipx::package_project -root_dir C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal -vendor utoronto.ca -library user -taxonomy /UserIP -import_files -set_current false 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SIZE_BIT_WIDTH' by 6 for port or parameter 'size' 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1624 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1089.180 ; gain = 17.230 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.180 ; gain = 17.230 
+// aA (cp): Package IP: addNotify
+// [GUI Memory]: 181 MB (+15362kb) [03:12:56]
+dismissDialog("IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 110 MB. Current time: 3/15/22, 4:52:19 PM EDT
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // aA (cp)
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal' 
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 108 MB. Current time: 3/15/22, 5:22:20 PM EDT
+// Elapsed time: 2090 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 694, 249); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 417, 262); // cl (w, cp)
+typeControlKey((HResource) null, "snake_game_axi4_full.sv", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("snake_game_axi4_full.sv", 294, 128); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 385, 87); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("snake_game_axi4_full.sv", 447, 134); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 238, 110); // cl (w, cp)
+typeControlKey((HResource) null, "snake_game_axi4_full.sv", 'v'); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 44 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 226, 219); // cl (w, cp)
+typeControlKey((HResource) null, "snake_game_axi4_full.sv", 'v'); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 81, 243); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 30 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 143, 169); // cl (w, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 151, 165); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 152, 178); // cl (w, cp)
+typeControlKey((HResource) null, "snake_game_axi4_full.sv", 'v'); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 236, 190); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 203, 168); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 336, 157); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 152, 42); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 152, 42, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("snake_game_axi4_full.sv", 152, 42); // cl (w, cp)
+// Elapsed time: 53 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 187, 125); // cl (w, cp)
+typeControlKey((HResource) null, "snake_game_axi4_full.sv", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ac (cp)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1901 ms.
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (C, F)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/users/budiwarm/snake_game_axi4_full_folder/snake_game_axi4_full_ip", 18); // cw (Q, F)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/users/budiwarm/snake_game_axi4_full_folder/snake_game_axi4lite_ip_fsm", 6, true, false, false, false, false); // cw (Q, F) - Shift Key
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, F)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test c:/Users/chanmi53/snake_game_axi4_full_folder/fast_snake_game_axilite c:/Users/chanmi53/snake_game_axi4_full_folder/slow_snake_game_axilite c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_ip_timer c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_timerfood c:/Users/chanmi53/snake_game_ip} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// S (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // B (f, F)
+setFolderChooser("C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_axi_folder/snake_game_slave_axi_ip");
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test c:/Users/chanmi53/snake_game_axi4_full_folder/fast_snake_game_axilite c:/Users/chanmi53/snake_game_axi4_full_folder/slow_snake_game_axilite c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_ip_timer c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_timerfood c:/Users/chanmi53/snake_game_ip C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_axi_folder/snake_game_slave_axi_ip} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// bx (cp):  Refresh All IP Repositories : addNotify
+// Tcl Message: update_ip_catalog 
+// S (cp): Critical Messages: addNotify
+// c (F): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (F)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (C, F)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// S (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Settings"); // F (cp)
+// [GUI Memory]: 191 MB (+703kb) [03:52:58]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), slave_intf : xil_defaultlib.snake_game_slave_axi_0]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), slave_intf : xil_defaultlib.snake_game_slave_axi_0]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), slave_intf : xil_defaultlib.snake_game_slave_axi_0]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), slave_intf : xil_defaultlib.snake_game_slave_axi_0]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv), slave_intf : xil_defaultlib.snake_game_slave_axi_0]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// Elapsed time: 11 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "slave"); // OverlayTextField (ay, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "snake_game_slave_axi_v1_0 ; AXI4 ; Production ; Included ; utoronto.ca:user:snake_game_slave_axi:1.0", 2, "snake_game_slave_axi_v1_0", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "snake_game_slave_axi_v1_0 ; AXI4 ; Production ; Included ; utoronto.ca:user:snake_game_slave_axi:1.0", 2, "snake_game_slave_axi_v1_0", 0, false); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "snake_game_slave_axi_v1_0 ; AXI4 ; Production ; Included ; utoronto.ca:user:snake_game_slave_axi:1.0", 2); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "snake_game_slave_axi_v1_0 ; AXI4 ; Production ; Included ; utoronto.ca:user:snake_game_slave_axi:1.0", 2, "snake_game_slave_axi_v1_0", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cp): Customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+dismissDialog("Customize IP"); // r (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name snake_game_slave_axi -vendor utoronto.ca -library user -version 1.0 -module_name snake_game_slave_axi_0 -dir c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_slave_axi_0/snake_game_slave_axi_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'snake_game_slave_axi_0'... 
+// aI (cp): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_slave_axi_0/snake_game_slave_axi_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'snake_game_slave_axi_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'snake_game_slave_axi_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all snake_game_slave_axi_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_slave_axi_0/snake_game_slave_axi_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_slave_axi_0/snake_game_slave_axi_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 4 snake_game_slave_axi_0_synth_1 
+// Tcl Message: [Tue Mar 15 17:33:00 2022] Launched snake_game_slave_axi_0_synth_1... Run output will be captured here: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/snake_game_slave_axi_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cQ, cp)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game_axi4_full.sv", 1); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Mar 15 17:33:47 2022] Launched synth_1... Run output will be captured here: C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 45 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, snake_game_axi4_full (snake_game_axi4_full.sv)]", 1, true); // B (D, cp) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game_axi4_full.sv", 1); // k (j, cp)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (Q, cp)
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", (String) null); // OverlayTextField (K, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// F (cp): Settings: addNotify
+dismissDialog("Settings"); // F (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i (N, cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // i (N, cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// Elapsed time: 24 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Elapsed time: 97 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bx (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bx (Q)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // q (ak, Q)
+setFolderChooser("C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food");
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // JButton (C, J)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 13 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Current Version", 6); // B (Q, cp)
+// bx (cp):  IP Packager : addNotify
+// Tcl Message: ipx::package_project -root_dir C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food -vendor utoronto.ca -library user -taxonomy /UserIP -import_files -set_current false 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y_payload' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_X_BIT_WIDTH' by 8 for port or parameter 'snake_x' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SNAKE_LENGTH' by 64 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SNAKE_Y_BIT_WIDTH' by 7 for port or parameter 'snake_y' INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'SIZE_BIT_WIDTH' by 6 for port or parameter 'size' 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1436 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1119.883 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1119.883 ; gain = 0.000 
+// aA (cp): Package IP: addNotify
+// [GUI Memory]: 208 MB (+8537kb) [03:58:28]
+// [GUI Memory]: 221 MB (+1973kb) [03:58:29]
+dismissDialog("IP Packager"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: current_project snake_game_axi4_full 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar (Q, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar (Q, cp)
+selectTable(PAResourceItoN.MemoryMapFacetTable_MEMORY_MAP, "S_AXI ;  ; ", 0, "S_AXI", 0); // H (Q, cp)
+// Tcl Message: current_project tmp_edit_project 
+selectTable(PAResourceAtoD.AddressBlockFacetTable_ADDRESS_BLOCKS, "reg0 ;  ;  ; 0 ; 4294967296 ; pow(2,(spirit:decode(id('MODELPARAM_VALUE.C_S_AXI_DATA_WIDTH')) - 1) + 1)", 0, "reg0", 0); // H (Q, cp)
+selectTable(PAResourceAtoD.AddressBlockFacetTable_ADDRESS_BLOCKS, "reg0 ;  ;  ; 0 ; 4294967296 ; pow(2,(spirit:decode(id('MODELPARAM_VALUE.C_S_AXI_DATA_WIDTH')) - 1) + 1)", 0, "reg0", 0); // H (Q, cp)
+selectTable(PAResourceAtoD.AddressBlockFacetTable_ADDRESS_BLOCKS, "reg0 ;  ;  ; 0 ; 4294967296 ; pow(2,(spirit:decode(id('MODELPARAM_VALUE.C_S_AXI_DATA_WIDTH')) - 1) + 1)", 0, "reg0", 0, false, false, false, false, true); // H (Q, cp) - Double Click
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTab(PAResourceAtoD.AddressMemoryContentPanel_ADDRESSING_AND_MEMORY_CONTENT_PANEL, PAResourceAtoD.AddressMemoryContentPanel_MEMORY_MAPS, "Memory Maps (for slaves)", 0); // i (c, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (C, I)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 138 MB. Current time: 3/15/22, 5:38:11 PM EDT
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // aA (cp)
+dismissDialog("Package IP"); // bx (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_go_signal c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_food_gen_test c:/Users/chanmi53/snake_game_axi4_full_folder/fast_snake_game_axilite c:/Users/chanmi53/snake_game_axi4_full_folder/slow_snake_game_axilite c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_ip_timer c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4lite_timerfood c:/Users/chanmi53/snake_game_ip c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_axi_folder/snake_game_slave_axi_ip} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Elapsed time: 294 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "snake_game_axi4_full.sv", 1); // k (j, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 239, 111); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 320, 176); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 275, 129); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 168, 96); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 168, 96, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("snake_game_axi4_full.sv", 179, 110); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 179, 110, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 135 MB. Current time: 3/15/22, 6:08:11 PM EDT
+// Elapsed time: 1595 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 140, 136); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 155, 219); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 298, 207); // cl (w, cp)
+// Elapsed time: 58 seconds
+selectCodeEditor("snake_game_axi4_full.sv", 312, 232); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 296, 269); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 319, 213); // cl (w, cp)
+selectCodeEditor("snake_game_axi4_full.sv", 288, 225); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 132 MB. Current time: 3/15/22, 6:38:12 PM EDT

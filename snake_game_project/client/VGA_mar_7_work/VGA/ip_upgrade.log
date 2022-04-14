@@ -1,0 +1,37 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Wed Mar 16 22:53:40 2022
+| Host         : BA3145WS15 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_snake_game_axi4_full_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_snake_game_axi4_full_0_1 (utoronto.ca:user:snake_game_axi4_full:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Wed Mar 16 21:50:38 2022
+| Host         : BA3145WS15 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_snake_game_axi4_full_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_snake_game_axi4_full_0_1 (utoronto.ca:user:snake_game_axi4_full:1.0 (Rev. 2)) to Vivado generation flows.
+

@@ -1,0 +1,23 @@
+#ifndef PLAYERS_H
+#define PLAYERS_H
+
+#include "lwip/tcp.h"
+#include "lwip/ip_addr.h"
+
+#define NUM_PLAYERS = 2;
+#define PLAYER_BUF_SIZE = 20;
+
+struct tcp_pcb * player_1_pcb;
+struct tcp_pcb * player_2_pcb;
+
+ip_addr_t player_1_ip;
+ip_addr_t player_2_ip;
+
+char * player_1_buf;
+char * player_2_buf;
+
+char * players_concat;
+
+void init_players();
+
+#endif

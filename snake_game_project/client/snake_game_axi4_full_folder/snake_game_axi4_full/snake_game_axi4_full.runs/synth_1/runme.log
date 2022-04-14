@@ -1,0 +1,477 @@
+
+*** Running vivado
+    with args -log snake_game_axi4_full.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source snake_game_axi4_full.tcl
+
+
+****** Vivado v2018.3.1 (64-bit)
+  **** SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+  **** IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source snake_game_axi4_full.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/final_demo_food_fix'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/final_demo_snake_axi4_full'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/users/budiwarm/snake_game_axi4_full_folder/snake_game_2_player_mar27'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/users/budiwarm/snake_game_axi4_full_folder/snake_game_2_player_slvreg'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/2player_snake_game_axi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_newaddr'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_axi_folder/snake_game_slave_axi_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'utoronto.ca:user:snake_game_axi4_full:1.0'. The one found in IP location 'c:/Users/chanmi53/snake_game_axi4_full_folder/final_demo_snake_axi4_full' will take precedence over the same IP in locations: 
+   c:/Users/chanmi53/snake_game_axi4_full_folder/2player_snake_game_axi
+   c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_newaddr
+   c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_slave_food
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.cache/ip 
+Command: synth_design -top snake_game_axi4_full -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4108 
+WARNING: [Synth 8-2507] parameter declaration becomes local in snake_game_axi4_full with formal parameter declaration list [C:/Users/chanmi53/snake_game_files/snake_game_axi4_full.sv:128]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 483.445 ; gain = 112.063
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'snake_game_axi4_full' [C:/Users/chanmi53/snake_game_files/snake_game_axi4_full.sv:4]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter SNAKE_X_BIT_WIDTH bound to: 8 - type: integer 
+	Parameter SNAKE_Y_BIT_WIDTH bound to: 7 - type: integer 
+	Parameter SIZE_BIT_WIDTH bound to: 6 - type: integer 
+	Parameter MAX_SNAKE_LENGTH bound to: 64 - type: integer 
+	Parameter PAYLOAD_WIDTH bound to: 966 - type: integer 
+	Parameter MAX_TXN_LENGTH bound to: 66 - type: integer 
+	Parameter SNAKE_BASE_ADDR bound to: -1073741824 - type: integer 
+	Parameter SNAKE_ADDR_OFFSET bound to: 4 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_WRITE bound to: 2'b01 
+	Parameter WRITE_WAIT bound to: 2'b10 
+	Parameter IDLE_WAIT bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'snake_game_slave_axi_0' [C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/.Xil/Vivado-3080-BA3145WS15/realtime/snake_game_slave_axi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'snake_game_slave_axi_0' (1#1) [C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/.Xil/Vivado-3080-BA3145WS15/realtime/snake_game_slave_axi_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'S_AXI_AWADDR' does not match port width (4) of module 'snake_game_slave_axi_0' [C:/Users/chanmi53/snake_game_files/snake_game_axi4_full.sv:258]
+WARNING: [Synth 8-689] width (32) of port connection 'S_AXI_WSTRB' does not match port width (4) of module 'snake_game_slave_axi_0' [C:/Users/chanmi53/snake_game_files/snake_game_axi4_full.sv:262]
+WARNING: [Synth 8-689] width (32) of port connection 'S_AXI_ARADDR' does not match port width (4) of module 'snake_game_slave_axi_0' [C:/Users/chanmi53/snake_game_files/snake_game_axi4_full.sv:270]
+WARNING: [Synth 8-350] instance 'slave_intf' of module 'snake_game_slave_axi_0' requires 23 connections, but only 21 given [C:/Users/chanmi53/snake_game_files/snake_game_axi4_full.sv:255]
+INFO: [Synth 8-6157] synthesizing module 'snake_game_top_0' [C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/.Xil/Vivado-3080-BA3145WS15/realtime/snake_game_top_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'snake_game_top_0' (2#1) [C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/.Xil/Vivado-3080-BA3145WS15/realtime/snake_game_top_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chanmi53/snake_game_files/snake_game_axi4_full.sv:681]
+INFO: [Synth 8-6155] done synthesizing module 'snake_game_axi4_full' (3#1) [C:/Users/chanmi53/snake_game_files/snake_game_axi4_full.sv:4]
+WARNING: [Synth 8-3917] design snake_game_axi4_full has port M_AXI_WSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design snake_game_axi4_full has port M_AXI_WSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design snake_game_axi4_full has port M_AXI_WSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design snake_game_axi4_full has port M_AXI_WSTRB[0] driven by constant 1
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[11]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[10]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[9]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[8]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[7]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[6]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[5]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[4]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[31]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[30]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[29]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[28]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[27]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[26]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[25]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[24]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[23]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[22]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[21]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[20]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[19]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[18]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[17]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[16]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[15]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[14]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[13]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[12]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[11]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[10]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[9]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[8]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[7]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[6]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[5]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_WSTRB[4]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[31]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[30]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[29]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[28]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[27]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[26]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[25]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[24]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[23]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[22]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[21]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[20]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[19]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[18]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[17]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[16]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[15]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[14]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[13]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[12]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[11]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[10]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[9]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[8]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[7]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[6]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[5]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_ARADDR[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 519.914 ; gain = 148.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 519.914 ; gain = 148.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 519.914 ; gain = 148.531
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_slave_axi_0/snake_game_slave_axi_0/snake_game_slave_axi_0_in_context.xdc] for cell 'slave_intf'
+Finished Parsing XDC File [c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_slave_axi_0/snake_game_slave_axi_0/snake_game_slave_axi_0_in_context.xdc] for cell 'slave_intf'
+Parsing XDC File [c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_top_0/snake_game_top_0/snake_game_top_0_in_context.xdc] for cell 'snake_top'
+Finished Parsing XDC File [c:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.srcs/sources_1/ip/snake_game_top_0/snake_game_top_0/snake_game_top_0_in_context.xdc] for cell 'snake_top'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.566 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 872.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 872.566 ; gain = 501.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 872.566 ; gain = 501.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for slave_intf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for snake_top. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 872.566 ; gain = 501.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 872.566 ; gain = 501.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 2     
+	              448 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 2     
+	   4 Input    448 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module snake_game_axi4_full 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 2     
+	              448 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 2     
+	   4 Input    448 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design snake_game_axi4_full has port M_AXI_WSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design snake_game_axi4_full has port M_AXI_WSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design snake_game_axi4_full has port M_AXI_WSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design snake_game_axi4_full has port M_AXI_WSTRB[0] driven by constant 1
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design snake_game_axi4_full has unconnected port S_AXI_AWADDR[20]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'snake_payload_reg[30]' (FDRE) to 'snake_payload_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\snake_payload_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 872.566 ; gain = 501.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 872.566 ; gain = 501.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 874.629 ; gain = 503.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 896.055 ; gain = 524.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module slave_intf has unconnected pin S_AXI_AWPROT[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module slave_intf has unconnected pin S_AXI_AWPROT[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module slave_intf has unconnected pin S_AXI_AWPROT[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module slave_intf has unconnected pin S_AXI_ARPROT[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module slave_intf has unconnected pin S_AXI_ARPROT[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module slave_intf has unconnected pin S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 896.055 ; gain = 524.672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 896.055 ; gain = 524.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 896.055 ; gain = 524.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 896.055 ; gain = 524.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 896.055 ; gain = 524.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 896.055 ; gain = 524.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------+----------+
+|      |BlackBox name          |Instances |
++------+-----------------------+----------+
+|1     |snake_game_slave_axi_0 |         1|
+|2     |snake_game_top_0       |         1|
++------+-----------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |snake_game_slave_axi_0 |     1|
+|2     |snake_game_top_0       |     1|
+|3     |BUFG                   |     1|
+|4     |CARRY4                 |     8|
+|5     |LUT1                   |     2|
+|6     |LUT2                   |    18|
+|7     |LUT3                   |  1896|
+|8     |LUT4                   |    19|
+|9     |LUT5                   |     7|
+|10    |LUT6                   |     4|
+|11    |FDRE                   |  1994|
+|12    |IBUF                   |    54|
+|13    |OBUF                   |   112|
++------+-----------------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  6156|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 896.055 ; gain = 524.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 6 critical warnings and 90 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 896.055 ; gain = 172.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 896.055 ; gain = 524.672
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'snake_game_axi4_full' is not ideal for floorplanning, since the cellview 'snake_game_axi4_full' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 896.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 117 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 896.105 ; gain = 536.191
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 896.105 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/chanmi53/snake_game_axi4_full_folder/snake_game_axi4_full/snake_game_axi4_full.runs/synth_1/snake_game_axi4_full.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file snake_game_axi4_full_utilization_synth.rpt -pb snake_game_axi4_full_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 29 13:12:36 2022...

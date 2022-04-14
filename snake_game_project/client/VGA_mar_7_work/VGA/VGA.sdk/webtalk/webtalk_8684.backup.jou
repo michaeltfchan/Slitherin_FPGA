@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# 
+# Start of session at: Tue Mar 29 14:26:42 2022
+# Process ID: 8684
+# Current directory: C:/Users/chanmi53/VGA_mar_7_work/VGA/VGA.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/chanmi53/VGA_mar_7_work/VGA/VGA.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/chanmi53/VGA_mar_7_work/VGA/VGA.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

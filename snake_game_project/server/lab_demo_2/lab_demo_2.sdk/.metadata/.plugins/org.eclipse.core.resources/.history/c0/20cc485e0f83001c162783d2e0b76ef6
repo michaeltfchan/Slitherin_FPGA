@@ -1,0 +1,13 @@
+#ifndef PLAYERS_H
+#define PLAYERS_H
+
+
+#include "lwip/tcp.h";
+
+struct tcp_pcb * player_1_pcb, player_2_pcb;
+ip_addr_t player_1_ip, player_2_ip;
+char * player_1_buf, player_2_buf;
+
+void init_players();
+
+#endif
