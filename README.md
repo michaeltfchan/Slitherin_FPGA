@@ -1,12 +1,12 @@
-# Slytherin_FPGA
+#Slitherin_FPGA
 ECE532 - Final Project
 
 The tree consists mainly of two parts, which are the ‘client’ and ‘server’ folders. Each folder has its own subfolders, described below:
 
-Client:
+##Client:
 The client folder is located under snake_game_project/client/, and contains the following sub-directories:
 
-VGA_mar_7_work: This ridiculously named folder includes the main snake_game_client hardware. The VGA.xpr file is the main Vivado project, which is where the block diagram exists, and where you would launch the SDK project from.
+###VGA_mar_7_work: This ridiculously named folder includes the main snake_game_client hardware. The VGA.xpr file is the main Vivado project, which is where the block diagram exists, and where you would launch the SDK project from.
 
 The software code is located under this same folder, in the following directory:        
 VGA/VGA.sdk/snake_game_client_2_player/src/. This is where all software code resides, which includes code for VGA drawing, as well as server-client communication. Below are the main files of interest:
