@@ -1,36 +1,48 @@
-#Slitherin_FPGA
+# Slitherin_FPGA
 ECE532 - Final Project
 
 The tree consists mainly of two parts, which are the ‘client’ and ‘server’ folders. Each folder has its own subfolders, described below:
 
-##Client:
+## Client:
 The client folder is located under snake_game_project/client/, and contains the following sub-directories:
 
-###VGA_mar_7_work: This ridiculously named folder includes the main snake_game_client hardware. The VGA.xpr file is the main Vivado project, which is where the block diagram exists, and where you would launch the SDK project from.
+### VGA_mar_7_work: 
+This ridiculously named folder includes the main snake_game_client hardware. The VGA.xpr file is the main Vivado project, which is where the block diagram exists, and where you would launch the SDK project from.
 
 The software code is located under this same folder, in the following directory:        
 VGA/VGA.sdk/snake_game_client_2_player/src/. This is where all software code resides, which includes code for VGA drawing, as well as server-client communication. Below are the main files of interest:
-main.c: The main file that contains software logic including 
-Client-server communication
-Parsing inputs from server
-Passing inputs into hardware IP through slave registers
-Reading game state from BRAM, and updating VGA display based on read game state
-vga.c: Contains all VGA-related functions used in main.c
-vga.h: Header file for vga.c, contains function prototypes
+#### main.c: The main file that contains software logic including 
+* Client-server communication
+* Parsing inputs from server
+* Passing inputs into hardware IP through slave registers
+* Reading game state from BRAM, and updating VGA display based on read game state
+* vga.c: Contains all VGA-related functions used in main.c
 
-snake_game_axi4_full_folder: This folder contains the files related to the snake_game_axi module. 
-snake_game_axi4_full: A subfolder that contains the block diagram for this module
-snake_game_slave_axi_folder: A sub folder that contains the block diagram for the slave_sub_IP, which has slave registers used by the game client to receive inputs. This folder also has another sub-folder named “snake_game_slave_axi_ip” that contains the IP repository of slave_sub_IP.
-Snake_game_2_player_final_demo_food_fix: Another ridiculously named folder that contains the IP of the snake_game_axi module. This IP repository will be referenced by the main snake_game_client module (in VGA_mar_7_work)
+#### vga.h: Header file for vga.c, contains function prototypes
 
-snake_game_files: This folder contains all custom Verilog source code required for the game client IP.
+### snake_game_axi4_full_folder: 
+This folder contains the files related to the snake_game_axi module. 
 
-snake_top: This folder contains the Vivado project for the snake_top module (the main game logic IP).
+### snake_game_axi4_full: 
+A subfolder that contains the block diagram for this module
 
-snake_game_ip: This is where the game logic IP (generated from snake_top above) is located.
+### snake_game_slave_axi_folder: 
+A sub folder that contains the block diagram for the slave_sub_IP, which has slave registers used by the game client to receive inputs. This folder also has another sub-folder named “snake_game_slave_axi_ip” that contains the IP repository of slave_sub_IP.
 
-Server:
-Within the server, it contains our server vivado project as well as the food generator that will run on the PC. This parent directory of the server is in: snake_game_project/server/
+### Snake_game_2_player_final_demo_food_fix: 
+Another ridiculously named folder that contains the IP of the snake_game_axi module. This IP repository will be referenced by the main snake_game_client module (in VGA_mar_7_work)
+
+### snake_game_files: 
+This folder contains all custom Verilog source code required for the game client IP.
+
+### snake_top: 
+This folder contains the Vivado project for the snake_top module (the main game logic IP).
+
+### snake_game_ip: 
+This is where the game logic IP (generated from snake_top above) is located.
+
+## Server:
+Within the server, it contains our server vivado project as well as the food generator that will run on the PC. This parent directory of the server is in: *snake_game_project/server/*
 lab_demo_2: This folder contains the vivado project that has our server. It also contains the software files to run the server under lab_demo_2.sdk/tcp_server/src/
 main.c: This file contains the logic to setup the TCP server and handle the communication between clients and servers. The server is responsible for sending and receiving packets that may alter the game states. It decodes the input direction from each client and also encodes the packet that will be sent periodically to the clients. In addition, upon seeing the food_valid bit is high from a client, it will send a request to the food generator and receive a response back containing the new food locations that will be sent back to each client. 
 food_gen.py: This python script is used to generate food randomly and has a TCP connection to the server. 
